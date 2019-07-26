@@ -15,7 +15,7 @@ import sys
 
 def main(argv):
     # lendo imagem
-    image1 = data.imread(argv[0])
+    image1 = data.imread("data/"+argv[0])
     channels = 'gray'
     # verificando número de canais
     if len(image1.shape) == 3:

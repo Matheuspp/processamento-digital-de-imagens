@@ -39,7 +39,7 @@ def limiarizacao_simples(image, T_init, min_delta=0.001):
 def main(argv):
     
     # obtendo imagem 
-    image1 = img_as_float(rgb2gray(data.imread(argv[0])))
+    image1 = img_as_float(rgb2gray(data.imread("data/"+argv[0])))
     channels = 'gray'
     
     # verificando número de canais

@@ -17,7 +17,7 @@ import sys
 
 def main(argv):
     # lendo imagem
-    image1 = img_as_float(rgb2gray(data.imread(argv[0])))
+    image1 = img_as_float(rgb2gray(data.imread("data/" + argv[0])))
     channels = 'gray'
     
     # verificando número de canais

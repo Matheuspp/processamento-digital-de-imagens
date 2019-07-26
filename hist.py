@@ -14,7 +14,7 @@ import sys
 
 def main(argv):
     # lendo imagem
-    image1 = data.imread(argv[0])
+    image1 = data.imread("data/"+argv[0])
     
     # plotando histograma
     plt.hist((image1).flatten(), density=True, color='purple', bins=25)

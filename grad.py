@@ -25,7 +25,7 @@ def main(argv):
                   [-1.,  0.,  1.]], dtype=float)
      
     # lendo imagem
-    image1 = img_as_float(data.imread(argv[0]))
+    image1 = img_as_float(data.imread("data/" + argv[0]))
     channels = 'gray'
     
     # verificando numero de canais

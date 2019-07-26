@@ -15,7 +15,7 @@ import sys
 
 def main(argv):
     # lendo imagem
-    image1 = img_as_float(data.imread(argv[0]))
+    image1 = img_as_float(data.imread("data/"+argv[0]))
     # filtro do máximo
     final_max = filters.maximum_filter(image1, size=float(argv[3]))
     # filtro do mínimo

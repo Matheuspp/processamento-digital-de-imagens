@@ -18,8 +18,8 @@ import sys
 
 def main(argv):
     # lendo imagens
-    image1 = rgb2gray(data.imread(argv[0]))
-    image2 = rgb2gray(data.imread(argv[1]))
+    image1 = rgb2gray(data.imread("data/"+argv[0]))
+    image2 = rgb2gray(data.imread("data/"+argv[1]))
     
     
     channels = 'gray'
