@@ -20,12 +20,15 @@ def main(argv):
     mascara = np.ones([int(argv[2]), int(argv[2])], dtype='float')
     mascara_final = np.divide(mascara, int(argv[2]) ** 2)
     
+    # verificando o número de canais na imagem
     if len(image1.shape) == 3:
         mascara_final = mascara_final[:,:,None]
         channels = None
-        
+    
+    # aplicando a convolução
     final = filters.convolve(image1, mascara_final, mode='constant', cval=0)
     
+    # salvando imagem
     plt.imsave(argv[1], final, cmap=channels)
     
     plt.figure().suptitle("filtro da média")
