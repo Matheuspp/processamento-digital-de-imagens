@@ -34,7 +34,7 @@ def main(argv):
     
    
     # salvando imagem
-    plt.imsave(argv[1], g_image, cmap=channels)
+    plt.imsave(argv[1], g_image, cmap=channels)#saving
     
     # plotagem
     plt.figure().suptitle("filtro da mediana")
